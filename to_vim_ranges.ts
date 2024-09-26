@@ -1,5 +1,5 @@
 import type { Denops } from "jsr:@denops/std@^7.1.0";
-import * as LSP from "npm:vscode-languageserver-protocol@3.17.5";
+import type * as LSP from "npm:vscode-languageserver-protocol@3.17.5";
 import { chunk } from "jsr:@std/collections@^1.0.0/chunk";
 import { toVimPositions } from "./to_vim_positions.ts";
 

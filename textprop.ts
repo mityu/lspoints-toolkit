@@ -2,7 +2,7 @@ import type { Denops } from "jsr:@denops/std@^7.1.0";
 import { batch } from "jsr:@denops/std@^7.1.0/batch";
 import * as vimFn from "jsr:@denops/std@^7.1.0/function/vim";
 import * as nvimFn from "jsr:@denops/std@^7.1.0/function/nvim";
-import * as LSP from "npm:vscode-languageserver-protocol@^3.17.5";
+import type * as LSP from "npm:vscode-languageserver-protocol@^3.17.5";
 import type { Predicate } from "jsr:@core/unknownutil@^4.3.0/type";
 import { ensure } from "jsr:@core/unknownutil@^4.3.0/ensure";
 import { as } from "jsr:@core/unknownutil@^4.3.0/as";
