@@ -1,0 +1,18 @@
+{
+  "exports": {
+    "./textprop": "./textprop.ts",
+    "./popup": "./popup.ts",
+    "./highlight": "./highlight.ts",
+    "./to-vim-positions": "./to_vim_positions.ts",
+    "./to-vim-ranges": "./to_vim_ranges.ts"
+  },
+  "lock": false,
+  "tasks": {
+    "check": "deno check --no-lock ./",
+    "lint": "deno lint ./",
+    "lint-fix": "deno lint --fix ./",
+    "fmt": "deno fmt ./",
+    "test": "deno test -A --doc --parallel --shuffle **/*.ts",
+    "upgrade": "deno run -A jsr:@molt/cli **/*.ts --write"
+  }
+}
