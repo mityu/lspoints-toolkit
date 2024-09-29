@@ -30,7 +30,7 @@ export async function toVimRanges(
 
 function getInclusiveRange(src: LSP.Range): LSP.Range {
   const isZeroWidth = src.start.line === src.end.line &&
-    src.start.character === src.start.character;
+    src.start.character === src.end.character;
 
   const end = src.end.character === 0
     ? { line: src.end.line - 1, character: -1 }
