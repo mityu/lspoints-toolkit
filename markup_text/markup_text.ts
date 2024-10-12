@@ -1,6 +1,6 @@
 import type * as LSP from "npm:vscode-languageserver-protocol@^3.17.5";
-import { is } from "jsr:@core/unknownutil@4.3.0/is";
-import type { Predicate } from "jsr:@core/unknownutil@4.3.0/type";
+import { is } from "jsr:@core/unknownutil@^4.3.0/is";
+import type { Predicate } from "jsr:@core/unknownutil@^4.3.0/type";
 import { dropLastWhile } from "jsr:@std/collections@^1.0.0/drop-last-while";
 import { unreachable } from "jsr:@lambdalisue/unreachable@^1.0.1";
 import { parseMarkdown } from "./markdown.ts";

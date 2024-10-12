@@ -1,8 +1,8 @@
 import type * as LSP from "npm:vscode-languageserver-protocol@^3.17.5";
 import { marked } from "npm:marked@^14.1.2";
 import type { MarkedToken, Token, TokensList } from "npm:marked@^14.1.2";
-import { ensure } from "jsr:@core/unknownutil@4.3.0/ensure";
-import { is } from "jsr:@core/unknownutil@4.3.0/is";
+import { ensure } from "jsr:@core/unknownutil@^4.3.0/ensure";
+import { is } from "jsr:@core/unknownutil@^4.3.0/is";
 import { unescape } from "jsr:@std/html@^1.0.3/entities";
 import { dropLastWhile } from "jsr:@std/collections@^1.0.0/drop-last-while";
 import type { TextAttrItem } from "./markup_text.ts";

@@ -8,7 +8,7 @@ import { ensure } from "jsr:@core/unknownutil@^4.3.0/ensure";
 import { as } from "jsr:@core/unknownutil@^4.3.0/as";
 import { is } from "jsr:@core/unknownutil@^4.3.0/is";
 import { omit } from "jsr:@std/collections@^1.0.0/omit";
-import { execute } from "jsr:@denops/std@^7.0.0/helper/execute";
+import { execute } from "jsr:@denops/std@^7.1.0/helper/execute";
 // import { echo } from "./echo.ts";
 
 const cacheKey = "lspoints-toolkit/textprop.ts@0";

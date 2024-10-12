@@ -1,5 +1,5 @@
 import type { Denops } from "jsr:@denops/std@^7.1.0";
-import { is } from "jsr:@core/unknownutil@4.3.0/is";
+import { is } from "jsr:@core/unknownutil@^4.3.0/is";
 
 /**
  * Option entries for `echo` function.
