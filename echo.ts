@@ -42,7 +42,7 @@ export async function echo(
   message: string | string[],
   options?: EchoOptions,
 ) {
-  const prefix = options?.prefix ? options.prefix : "[lspoints] ";
+  const prefix = options?.prefix != undefined ? options.prefix : "[lspoints] ";
   let msgs = is.String(message) ? message.split("\n") : message;
   if (prefix.length > 0) {
     msgs = msgs.map((v) => `${prefix}${v}`);
