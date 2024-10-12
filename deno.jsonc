@@ -1,6 +1,6 @@
 {
   "name": "@mityu/lspoints-toolkit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "exports": {
     "./textprop": "./textprop.ts",
     "./popup": "./popup.ts",
