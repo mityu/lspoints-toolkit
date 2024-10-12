@@ -123,7 +123,9 @@ test({
       "overrides existing highlight when force is true",
       async () => {
         await denops.cmd("highlight clear");
-        await denops.cmd("highlight TestHighlightGroup guifg=#987654 guibg=#456789");
+        await denops.cmd(
+          "highlight TestHighlightGroup guifg=#987654 guibg=#456789",
+        );
         await setHighlights(denops, [{
           name: "TestHighlightGroup",
           guifg: "#123456",
