@@ -12,8 +12,9 @@
   },
   "lock": false,
   "tasks": {
-    "check-all": "deno task check && deno task lint && deno task test",
+    "check-all": "deno task check && deno task check:doc && deno task lint && deno task test",
     "check": "deno check --no-lock ./",
+    "check:doc": "deno test --doc --no-run",
     "lint": "deno lint ./",
     "lint-fix": "deno lint --fix ./",
     "fmt": "deno fmt ./",

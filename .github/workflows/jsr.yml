@@ -1,0 +1,31 @@
+# This workflow is copied from @denops/std's jsr-publish workflow file, which
+# is distributed under the MIT License:
+# https://github.com/vim-denops/deno-denops-std/blob/402dedb1b4e2a306817facfad4670fbbaf3eee24/.github/workflows/jsr.yml
+# https://github.com/vim-denops/deno-denops-std/blob/402dedb1b4e2a306817facfad4670fbbaf3eee24/LICENSE
+name: jsr
+
+env:
+  DENO_VERSION: 1.x
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: ${{ env.DENO_VERSION }}
+      - name: Publish
+        run: |
+          deno run -A jsr:@david/publish-on-tag@0.1.3
