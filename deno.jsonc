@@ -5,11 +5,14 @@
     "./textprop": "./textprop.ts",
     "./popup": "./popup.ts",
     "./highlight": "./highlight.ts",
+    "./markup-text": "./markup_text/markup_text.ts",
     "./to-vim-positions": "./to_vim_positions.ts",
-    "./to-vim-ranges": "./to_vim_ranges.ts"
+    "./to-vim-ranges": "./to_vim_ranges.ts",
+    "./echo": "./echo.ts"
   },
   "lock": false,
   "tasks": {
+    "check-all": "deno task check && deno task lint && deno task test",
     "check": "deno check --no-lock ./",
     "lint": "deno lint ./",
     "lint-fix": "deno lint --fix ./",
